@@ -173,12 +173,9 @@ hr{
     border-radius: 50em;
     width: 227px;
     height: 227px;
-    background: url(../images/myfoto.jpg);
+    background: url(../images/myfoto.JPG);
     vertical-align: top;
-    
 }
-
-
 #abiliti{
     background: #F3EFE0;
     text-align: center;
@@ -257,6 +254,7 @@ ul.no-bullets  li {
 }
 .progect{
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
@@ -303,6 +301,7 @@ ul.no-bullets  li {
 }
 .progect1{
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
@@ -425,6 +424,23 @@ ul.no-bullets  li {
     font-family: 'PT Sans', sans-serif;
     cursor: pointer;
 }
-    .applicationButton:hover {
-        background: #ca620d;
+.applicationButton:hover {
+    background: #ca620d;
+}
+.navlistmobile{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+    .navlist{
+        display: none;
     }
+    .navlistmobile{
+        display: block;
+    }
+    .topMain{
+        padding-top: 65px;
+    }
+    .progect1{
+        width: 67%;
+    }
+}
